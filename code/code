@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class chatbot {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Hello lets chat! How can i help you. What's ur name Buddy");
+        System.out.println(">>>");
+        String s=sc.nextLine();
+
+        while(s.length()>0){
+            System.out.println("Ok"+" "+s+" "+ "How are you");
+            System.out.println(">>>");
+            String a=sc.nextLine();
+            a=a.toUpperCase();
+            if(a.indexOf("FINE")>=0 ){
+                System.out.println("Good ");
+                break;
+            }
+            else {
+                System.out.println("Sad to hear");
+                break;
+            }
+
+        }
+    }
